@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(36, 36, 36);
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    color: rgb(197, 48, 152);
+    position: relative;
+    bottom: 20px;
+    background-color: rgb(54, 53, 53);
+    padding: 10px;
+}
+
+#mainpagelink {
+    color: transparent; 
+    text-decoration: none; 
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    right: 110px;
+    
+}
