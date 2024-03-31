@@ -4,11 +4,10 @@ body {
     padding: 0;
 }
 
-.title {
-    color: rgb(197, 48, 152);
+h1 {
+    color: rgb(240, 144, 49);
     position: relative;
-    bottom: 20px;
-    background-color: rgb(54, 53, 53);
+    bottom: 30px;
     padding: 10px;
 }
 
@@ -18,6 +17,56 @@ body {
     background-color: transparent;
     cursor: pointer;
     position: relative;
-    right: 110px;
-    
+    right: 110px; 
+}
+
+#timeloopimg {
+    position: relative;
+    top: 200px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.anime-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.anime-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.anime-item:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.anime-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
 }
